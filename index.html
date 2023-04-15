@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Teching You</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Edutech</h1>
+    </nav>
+    <div class="fullpage">
+        <div class="leftlist">
+            <h3>Topics</h3>
+            <hr>
+            <li onclick="displayRandomQuestion()"><a href="#" class="list-group">Basics of Python</a></li>
+            <hr>
+            <li onclick="displayRandomQuestion()"><a href="#" class="list-group">Date Types</a></li>
+            <hr>
+            <li onclick="displayRandomQuestion()"><a href="#" class="list-group">Patterns in Python</a></li>
+            <hr>
+            <li onclick="displayRandomQuestion()"><a href="#" class="list-group">Array And Numpy</a></li>
+            <hr>
+            <li onclick="displayRandomQuestion()"><a href="#" class="list-group">Strings in Python</a></li>
+            <hr>
+            <li onclick="displayRandomQuestion()"><a href="#" class="list-group">Functions</a></li>
+            <hr>
+            <li onclick="displayRandomQuestion()"><a href="#" class="list-group">Recursion And Lambda</a></li>
+
+        </div>
+        <br>
+        <div class="middle row-2">
+            <div class="midupper" id="player"></div>
+            <!-- <video width="360" height="240" controls>
+                    <source type="video/mp4" src="pexels-amit-1654216-1920x1080-30fps.mp4">
+                </video> -->
+            <script src="https://www.youtube.com/iframe_api"></script>
+            <br>
+            <div class="midlower">
+                <div class="quetion">
+                    <h4>Question</h4>
+                    <div id="question-container"></div>
+
+                </div>
+                <div class="answer">
+                    <form action="connect.php" method="post">
+                        <section id="section2">
+                            <label for="input-paragraph"> Answer :</label>
+                            <br>
+                            <textarea type="text" class="form-control" id="item" name="item"> </textarea>
+                            <br>
+                        </section>
+                        <button type="submit" class="btn btn-primary" value="Submit" name="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="rightlist">
+            <h3>AI Generated Answers</h3>
+            <hr>
+            <div class="form-check form-check-inline">
+                <input onclick="displayAiAnswers()" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Python is a high-level, interpreted programming
+                    language that is widely used for various purposes such as web development, data analysis, artificial
+                    intelligence, and more.</label>
+            </div>
+            <hr>
+            <div class="form-check form-check-inline">
+                <input onclick="displayAiAnswers()" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">A tuple is a collection of ordered and immutable
+                    elements enclosed in parentheses, whereas a list is a collection of ordered and mutable elements
+                    enclosed in square brackets. </label>
+            </div>
+            <hr>
+            <div class="form-check form-check-inline">
+                <input onclick="displayAiAnswers()" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">A module is a file containing Python code that
+                    defines functions, classes, and variables that can be imported and used in other Python
+                    code.</label>
+            </div>
+            <hr>
+            <div class="form-check form-check-inline">
+                <input onclick="displayAiAnswers()" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Object-oriented programming is a programming
+                    paradigm that uses objects, which are instances of classes, to represent real-world entities and
+                    their interactions. </label>
+            </div>
+            <hr>
+            <div class="form-check form-check-inline">
+                <input onclick="displayAiAnswers()" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">In Python, you can define classes with attributes
+                    and methods, and create objects from those classes to perform operations on them. OOP helps in
+                    writing more organized and reusable code. </label>
+            </div>
+            <hr>
+            <div class="form-check form-check-inline">
+                <section id="section1">
+                    <input onclick="displayAiAnswers()" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">You can use the type() function to check the
+                        type of a variable in Python. For example, type(42) would return, indicating that the variable
+                        is an integer. </label>
+                </section>
+            </div>
+            <hr>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        Designed by Swapnali Bhandare, April 2023.
+    </div>
+</footer>
+
+</html>
